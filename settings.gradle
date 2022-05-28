@@ -1,0 +1,3 @@
+rootProject.name = 'Fuxi'
+include 'Solarterms'
+
