@@ -1,8 +1,6 @@
 package com.yy.pattern.lichun.abstractFactory;
 
 import com.yy.pattern.lichun.simpleFactory.Product;
-import com.yy.pattern.lichun.simpleFactory.ProductA;
-import com.yy.pattern.lichun.simpleFactory.ProductB;
 
 /**
  * @author yy
@@ -13,4 +11,5 @@ import com.yy.pattern.lichun.simpleFactory.ProductB;
 public interface Factory {
 
     public Product createProduct();
+    public Product2 createProduct2();
 }

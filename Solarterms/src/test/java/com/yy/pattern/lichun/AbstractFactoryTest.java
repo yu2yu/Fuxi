@@ -1,10 +1,10 @@
 package com.yy.pattern.lichun;
 
 import com.yy.pattern.lichun.abstractFactory.Factory;
+import com.yy.pattern.lichun.abstractFactory.Product2;
 import com.yy.pattern.lichun.abstractFactory.ProductAFactory;
 import com.yy.pattern.lichun.abstractFactory.ProductBFactory;
 import com.yy.pattern.lichun.simpleFactory.Product;
-import com.yy.pattern.lichun.simpleFactory.SimpleFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -24,12 +24,12 @@ public class AbstractFactoryTest {
     public void testSimpleFactory(){
         Factory factoryA = new ProductAFactory();
         Product a = factoryA.createProduct();
-        assertEquals("product A .....",a.doWork());
+        Product2 a2 = factoryA.createProduct2();
 
 
         Factory factoryB = new ProductBFactory();
         Product b = factoryB.createProduct();
-        assertEquals("product B .....",b.doWork());
+        Product2 b2 = factoryB.createProduct2();
     }
 
 }

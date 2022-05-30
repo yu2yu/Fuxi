@@ -9,10 +9,14 @@ import com.yy.pattern.lichun.simpleFactory.ProductA;
  * @Description 抽象工厂模式
  * @createTime 2022-05-27 22:21:00
  */
-public class ProductAFactory implements Factory{
+public class ProductAFactory implements Factory {
 
     @Override
     public Product createProduct() {
         return new ProductA();
+    }
+    @Override
+    public Product2 createProduct2() {
+        return new ProductA2();
     }
 }
