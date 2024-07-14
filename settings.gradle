@@ -1,3 +1,4 @@
 rootProject.name = 'Fuxi'
 include 'Solarterms'
+include 'Word'
 
